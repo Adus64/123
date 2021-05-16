@@ -1,70 +1,61 @@
+
 <!DOCTYPE HTML>
 <html lang="pl">
 <head>
 	<meta charset="utf-8" />
-	<title>Odliczanie dni do wydarzenia </title>
-	
-	<script type="text/javascript">
-  function odliczanie()
-		{
-  var dzisiaj = new Date();
-  
-  var dzien = dzisiaj.getDate();
-  
-  var miesiac = dzisiaj.getMonth()+1;
-  
-  var rok = dzisiaj.getFullYear();
-  
- 
-			
-			
-var end = new Date("12/31/2021");//data wydarzenia
-			
-var endDzien = end.getDate();
-			
-var endMiesiac = end.getMonth()+1;
-			
-var endRok = end.getFullYear();
-			
-
-			
-			var pozostaloLat = endRok - rok;
-			var pozostaloMiesiecy = endMiesiac - miesiac;
-			var pozostaloDni = endDzien - dzien;
-		
-			
-		document.getElementById("aktualnaData").innerHTML = "Aktualna data: "+dzien+"/"+miesiac+"/"+rok; 
-		document.getElementById("dataWydarzenia").innerHTML = "Data wydarzenia do którego obliczamy liczbę dni: "+endDzien+"/"+endMiesiac+"/"+endRok;
-		document.getElementById("dniDoWydarzenia").innerHTML ="Do wydarzenia pozostało: "+pozostaloLat+"/"+pozostaloMiesiecy+"/"+pozostaloDni+;
-		}
+    <title>JS innerHTML</title>
+<script>
+    function z1()
+    {
+        document.getElementById("z1").innerHTML="Po prostu podszedł, bo łańcuch nie był do niczego przymocowany";
+    }
+    function z2()
+    {
+        document.getElementById("z1").innerHTML="Tu znajdziesz odpowiedź";
+    }   
 </script>
-	
-	<link rel="stylesheet" href="style.css" type="text/css" />
-	
 </head>
 <body>
-	<div id="container">
-<div id="topBar">
-Dni do końca roku”</div>
-	
-	<div id="aktualnaData">...</div> 
+<h2>JS posługiwanie się innerHTML</h2> 
+<h3>Zagadki logiczne:</h3>
+   <p>
+    Koń jest na łańcuchu o długości 20 metrów i udało mu się sięgnąć jabłko, które było w odległości 30 metrów od niego. Jak to zrobił?
+    </p>
+    <input type="button" value="zobacz odpowiedź" onclick="z1()">
+</br></br>
+<div id="z1">Tu znajdziesz odpowiedź</div>
+</br>
+</br>
+<input type="button" value="ukryj odpowiedź" onclick="z2()">
 
-	<br/>
-	
-	<div id="dataWydarzenia">...</div>
-<br/>
-<br/>	
-	
-	<div id="dniDoWydarzenia">...</div> 
-	
-	<script type="text/javascript" >
-	odliczanie();
-</script>
+   <p>
+    Koń jest na łańcuchu o długości 20 metrów i udało mu się sięgnąć jabłko, które było w odległości 30 metrów od niego. Jak to zrobił?
+    </p>
+    <input type="button" value="zobacz odpowiedź" onclick="z1()">
+</br></br>
+<div id="z1">Tu znajdziesz odpowiedź</div>
+</br>
+</br>
+<input type="button" value="ukryj odpowiedź" onclick="z2()">
 
-</div>
+   <p>
+    Koń jest na łańcuchu o długości 20 metrów i udało mu się sięgnąć jabłko, które było w odległości 30 metrów od niego. Jak to zrobił?
+    </p>
+    <input type="button" value="zobacz odpowiedź" onclick="z1()">
+</br></br>
+<div id="z1">Tu znajdziesz odpowiedź</div>
+</br>
+</br>
+<input type="button" value="ukryj odpowiedź" onclick="z2()">
 
- 
- 
-
+   <p>
+    Koń jest na łańcuchu o długości 20 metrów i udało mu się sięgnąć jabłko, które było w odległości 30 metrów od niego. Jak to zrobił?
+    </p>
+    <input type="button" value="zobacz odpowiedź" onclick="z1()">
+</br></br>
+<div id="z1">Tu znajdziesz odpowiedź</div>
+</br>
+</br>
+<input type="button" value="ukryj odpowiedź" onclick="z2()">
 </body>
 </html>

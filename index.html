@@ -5,7 +5,8 @@
 	<title>Odliczanie dni do wydarzenia </title>
 	
 	<script type="text/javascript">
-  
+  function odliczanie()
+		{
   var dzisiaj = new Date();
   
   var dzien = dzisiaj.getDate();
@@ -19,19 +20,63 @@
   var minuta = dzisiaj.getMinutes();
   
   var sekunda = dzisiaj.getSeconds();
-  
+			
+			
+var end = new Date("06/25/2021");//data wydarzenia
+			
+var endDzien = end.getDate();
+			
+var endMiesiac = end.getMonth()+1;
+			
+var endRok = end.getFullYear();
+			
+var endGodzina = end.getHours();
+
+var endMinuta = end.getMinutes();
+
+var endSekunda = end.getSeconds();
+			
+			var pozostaloLat = endRok - rok;
+			var pozostaloMiesiecy = endMiesiac - miesiac;
+			var pozostaloDni = endDzien - dzien;
+			var pozostaloGodzin = endGodzina - godzina;
+			var pozostaloMinut = endMinuta - minuta;
+			var pozostaloSekund = endSekunda - sekunda;
+			
+		document.getElementById("aktualnaData").innerHTML = "Aktualna data: "+dzien+"/"+miesiac+"/"+rok; 
+		document.getElementById("dataWydarzenia").innerHTML = "Data wydarzenia do którego obliczamy liczbę dni: "+endDzien+"/"+endMiesiac+"/"+endRok;
+		document.getElementById("dniDoWydarzenia").innerHTML ="Do wydarzenia pozostało: "+pozostaloLat+"/"+pozostaloMiesiecy;
+		}
 </script>
+	
+	<link rel="stylesheet" href="style.css" type="text/css" />
 	
 </head>
 <body>
+	<div id="container">
+<div id="topBar">
+Zadanie: Utwórz i sformatuj stronę odliczjącą liczbę dni do wydarzenia np. „Ile dni pozostało do wakacji.”</div>
+	
+	<div id="aktualnaData">...</div> 
 
- <div id="zegar">
+	<br/>
+	
+	<div id="dataWydarzenia">...</div>
+<br/>
+<br/>	
+	
+	<div id="dniDoWydarzenia">...</div> 
+	
+	<script type="text/javascript" >
+	odliczanie();
+</script>
+<div id="footer">
+Dołącz do klas informatycznych SLO i &lt;koduj&gt;
+</div>
+</div>
+
  
- <script type="text/javascript">
- document.getElementById("zegar").innerHTML = dzien;
- </script>
  
- </div>
 
 </body>
 </html>

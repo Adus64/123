@@ -15,11 +15,7 @@
   
   var rok = dzisiaj.getFullYear();
   
-  var godzina = dzisiaj.getHours();
-  
-  var minuta = dzisiaj.getMinutes();
-  
-  var sekunda = dzisiaj.getSeconds();
+ 
 			
 			
 var end = new Date("12/31/2021");//data wydarzenia
@@ -30,11 +26,7 @@ var endMiesiac = end.getMonth()+1;
 			
 var endRok = end.getFullYear();
 			
-var endGodzina = end.getHours();
 
-var endMinuta = end.getMinutes();
-
-var endSekunda = end.getSeconds();
 			
 			var pozostaloLat = endRok - rok;
 			var pozostaloMiesiecy = endMiesiac - miesiac;
@@ -45,7 +37,7 @@ var endSekunda = end.getSeconds();
 			
 		document.getElementById("aktualnaData").innerHTML = "Aktualna data: "+dzien+"/"+miesiac+"/"+rok; 
 		document.getElementById("dataWydarzenia").innerHTML = "Data wydarzenia do którego obliczamy liczbę dni: "+endDzien+"/"+endMiesiac+"/"+endRok;
-		document.getElementById("dniDoWydarzenia").innerHTML ="Do wydarzenia pozostało: "+pozostaloLat+"/"+pozostaloMiesiecy+"/"+pozostaloDni+"/"+pozostaloGodzin+"/"+pozostaloMinut+"/"+pozostaloSekund+;
+		document.getElementById("dniDoWydarzenia").innerHTML ="Do wydarzenia pozostało: "+pozostaloLat+"/"+pozostaloMiesiecy+"/"+pozostaloDni+;
 		}
 </script>
 	
